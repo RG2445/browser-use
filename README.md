@@ -274,5 +274,5 @@ If you use Browser Use in your research or project, please cite:
  </div>
 
 <div align="center">
-Made with ❤️ in Zurich and San Francisc
+Made with ❤️ in Zurich and San Francisco
  </div>
