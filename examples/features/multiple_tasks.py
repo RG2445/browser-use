@@ -12,14 +12,14 @@ load_dotenv()
 from browser_use import Agent
 from browser_use.browser import BrowserSession
 from browser_use.browser.types import async_playwright
-from browser_use.llm import ChatGoogle
+from browser_use.llm import ChatGroq
 
-api_key = os.getenv('GOOGLE_API_KEY')
+api_key = os.getenv('GROQ_API_KEY')
 
 if not api_key:
-	raise ValueError('GOOGLE_API_KEY is not set')
+	raise ValueError('GROQ_API_KEY is not set')
 
-llm = ChatGoogle(model='gemini-2.0-flash', api_key=api_key)
+llm = ChatGroq(model='meta-llama/llama-4-maverick-17b-128e-instruct', api_key=api_key)
 
 
 async def main():
