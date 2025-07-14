@@ -12,7 +12,7 @@ load_dotenv()
 from browser_use import Agent
 from browser_use.browser.profile import BrowserProfile
 from browser_use.browser.session import BrowserSession
-from browser_use.llm import ChatOpenAI
+from browser_use.llm import ChatGroq
 
 
 async def main():
@@ -26,7 +26,7 @@ async def main():
 	await browser_session.start()
 
 	current_agent = None
-	llm = ChatOpenAI(model='gpt-4.1')
+	llm = ChatGroq(model='meta-llama/llama-4-maverick-17b-128e-instruct')
 
 	task1 = 'find todays weather on San Francisco and extract it as json'
 	task2 = 'find todays weather in Zurich and extract it as json'
